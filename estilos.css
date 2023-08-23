@@ -46,6 +46,12 @@ main{
     color: #fff;
 }
 
+.resp{
+    background-color: #111;
+    background-size: cover;
+    min-height: calc(100vh - 300px);
+}
+
 article{
     background-color: #111;
     background-size: cover;
@@ -62,7 +68,6 @@ section{
 
 .lavados{
     margin-top: 200px;
-    height: auto;
     color: #fff;
     display: flex;
     justify-content: space-between;

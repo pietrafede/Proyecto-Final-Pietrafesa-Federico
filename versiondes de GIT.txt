@@ -1,4 +1,10 @@
-commit 373d54f129151102a464b6cddc67c35dc51ee731 (HEAD -> master)
+commit bda572d6591b91bf2e5d292f4dbe78d4c25e036b (HEAD -> master)
+Author: Pietrafesa Federico <fede.pietra@hotmail.com>
+Date:   Tue Aug 22 22:10:58 2023 -0300
+
+    agrego carousel formulario video index y responsive con bootstrap y media queries
+
+commit 373d54f129151102a464b6cddc67c35dc51ee731 (origin/master)
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Tue Aug 22 19:58:08 2023 -0300
 
