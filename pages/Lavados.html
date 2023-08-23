@@ -4,47 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>crr.crew</title>
-    <link rel="shortcut icon" href="multimedia/imagenes/logo png.png" type="image/x-icon">
+    <!--logo inicia-->
+    <link rel="shortcut icon" href="../multimedia/imagenes/logo png.png" type="image/x-icon">
+    <!--logo finaliza-->
+    <!--fontawasome inicia-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--fontawasome finaliza-->
+    <!--inicia bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--finaliza bootstrap-->
+    <!--inicia css-->
     <link rel="stylesheet" href="../estilos.css">
+    <!--finaliza css-->
+    <!--inicia normalize-->
     <link rel="stylesheet" href="../normalize.css">
+    <!--finaliza normalize-->
 </head>
 <body>
-    <header>
-        <div class="logo"><img src="../multimedia/imagenes/logo.jpg" alt="logo"></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Lavados</a></li>
-                <li><a href="Detail.html">Detail</a></li>
-                <li><a href="Fotos.html"><i class="fa-solid fa-camera"></i></a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
-    </header>
-    <article class="lavados">
-    <div><img class="lavados-img" src="../multimedia/imagenes/lavados.jpg" alt="lavados-img"></div>
-    <h2 class="lavados-titulo">Lavados al detalle</h2>
-    <p class="lavados-txt">"Bienvenido(a) a nuestro exclusivo servicio de lavados en crr.crew. Sabemos que cuidar tu vehículo es una expresión de tu pasión por la conducción y el amor por los autos. Es por eso que hemos creado un servicio dedicado a mantener tu vehículo impecable y listo para conquistar las calles con estilo.</p>
-    <p class="lavados-txt">En crr.crew, entendemos que tu automóvil, moto o cuatriciclo es más que un simple medio de transporte: es una extensión de tu personalidad y una manifestación de tu amor por la velocidad y la emoción. Nuestro equipo altamente capacitado y apasionado comparte tus mismos valores, y está comprometido a brindarle a tu vehículo el tratamiento que se merece.</p>
-    <p class="lavados-txt">Utilizamos las técnicas y productos más avanzados del mercado para asegurar un lavado detallado y profundo, sin comprometer la integridad de tu vehículo. Nuestro objetivo es dejarlo como si acabaras de conducirlo fuera del concesionario, siempre manteniendo el espíritu de manejarlo como recién robado.</p>
-    <p class="lavados-txt">Confía en nosotros para que tu vehículo reciba el mejor cuidado posible mientras tú te concentras en disfrutar de la carretera y compartir momentos inolvidables con la comunidad de crr.crew.</p>
-    <p class="lavados-txt">Prepárate para que tu vehículo brille con todo su esplendor y únase a nosotros en esta experiencia de lavado que va más allá de lo ordinario! Bienvenido(a) a crr.crew Lavados, donde la pasión por los autos se refleja en cada detalle."</p>
-    </article>
-    <footer>
-        <div class="redes">
-            <a href="https://www.instagram.com/crr.crew/"><i class="fa-brands fa-instagram"></i></a>
-            <i class="fa-brands fa-facebook"><!--falta crear el facebook--></i>
-            <a href="https://www.tiktok.com/@crr.crew"><i class="fa-brands fa-tiktok"></i></a>
+    <!--inicia header-->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../multimedia/imagenes/logo.jpg" alt="Logo"  class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#">Lavados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Detail.html">Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Fotos.html"><i class="fa-solid fa-camera"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="btn-contacto"><a href="Contacto.html">Contacto</a></div>
-        <p>todos los derechos reservados por copyright crr crew 2023</p>
+    </nav>
+    <!--finaliza header-->
+    <section class="container-fluid lavados">
+        <div class="row">
+            <div class="col-md-6"> 
+                <!--inicia texto-->
+                <h2 class="lavados-txt">Lavados al detalle</h2>
+                <p class="lavados-txt">"Bienvenido(a) a nuestro exclusivo servicio de lavados en crr.crew. Sabemos que cuidar tu vehículo es una expresión de tu pasión por la conducción y el amor por los autos. Es por eso que hemos creado un servicio dedicado a mantener tu vehículo impecable y listo para conquistar las calles con estilo.</p>
+                <p class="lavados-txt">En crr.crew, entendemos que tu automóvil, moto o cuatriciclo es más que un simple medio de transporte: es una extensión de tu personalidad y una manifestación de tu amor por la velocidad y la emoción. Nuestro equipo altamente capacitado y apasionado comparte tus mismos valores, y está comprometido a brindarle a tu vehículo el tratamiento que se merece.</p>
+                <p class="lavados-txt">Utilizamos las técnicas y productos más avanzados del mercado para asegurar un lavado detallado y profundo, sin comprometer la integridad de tu vehículo. Nuestro objetivo es dejarlo como si acabaras de conducirlo fuera del concesionario, siempre manteniendo el espíritu de manejarlo como recién robado.</p>
+                <p class="lavados-txt">Confía en nosotros para que tu vehículo reciba el mejor cuidado posible mientras tú te concentras en disfrutar de la carretera y compartir momentos inolvidables con la comunidad de crr.crew.</p>
+                <p class="lavados-txt">Prepárate para que tu vehículo brille con todo su esplendor y únase a nosotros en esta experiencia de lavado que va más allá de lo ordinario! Bienvenido(a) a crr.crew Lavados, donde la pasión por los autos se refleja en cada detalle."</p>
+                <!--finaliza texto-->
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Inicia Carousel -->
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <!--las imagenes no son las definitivas-->
+                    <div class="carousel-item active">
+                    <img src="../multimedia/imagenes/lavados.jpg" class="d-block w-100 img fluid" alt="lavados1">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../multimedia/imagenes/portada 1.jpg" class="d-block w-100 img fluid" alt="lavados2">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../multimedia/imagenes/portada 3.jpg" class="d-block w-100 img fluid" alt="lavados3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!--finaliza carousel-->
+    </section>
+    
+    <!--inicia footer-->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="redes">
+                    <a href="https://www.instagram.com/crr.crew/"><i class="fa-brands fa-instagram"></i></a>
+                    <i class="fa-brands fa-facebook"><!--falta crear el facebook--></i>
+                    <a href="https://www.tiktok.com/@crr.crew"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="btn-contacto"><a href="./Contacto.html">Contacto</a></div>
+                <p>todos los derechos reservados por copyright crr crew 2023</p>
+            </div>
+        </div>
     </footer>
+    <!--finaliza footer-->
+    <!--inicia btn whats-->
     <a href="https://api.whatsapp.com/send/?phone=5491122358364" class="whats" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-    <!--<a href="#" class="subir">
-        <i class="fa-solid fa-chevron-up"></i>
-    </a>-->
+    <!--finaliza btn whats-->
+    <!--inicia scripts--> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>  

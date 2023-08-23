@@ -4,50 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>crr.crew</title>
-    <link rel="shortcut icon" href="multimedia/imagenes/logo png.png" type="image/x-icon">
+    <!--logo inicia-->
+    <link rel="shortcut icon" href="../multimedia/imagenes/logo png.png" type="image/x-icon">
+    <!--logo finaliza-->
+    <!--fontawasome inicia-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--fontawasome finaliza-->
+    <!--inicia bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--finaliza bootstrap-->
+    <!--inicia css-->
     <link rel="stylesheet" href="../estilos.css">
+    <!--finaliza css-->
+    <!--inicia normalize-->
     <link rel="stylesheet" href="../normalize.css">
+    <!--finaliza normalize-->
 </head>
 <body>
-    <header>
-        <div class="logo"><img src="../multimedia/imagenes/logo.jpg" alt="logo"></div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="Lavados.html">Lavados</a></li>
-                <li><a href="Detail.html">Detail</a></li>
-                <li><a href="Fotos.html"><i class="fa-solid fa-camera"></i></a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
-    </header>
-    <article class="contacto">
-        <h2 class="contacto-titulo">Contacto</h2>
-        <p class="contacto-txt">"¡Contáctanos! Estamos aquí para responder tus preguntas y escuchar tus comentarios. En crr.crew, valoramos la conexión con nuestra comunidad de entusiastas automovilísticos. ¡Esperamos saber de ti pronto!"</p>
-        <form action="enviar.php" method="post" enctype="text/plain">
-        <input class="form" type="text"placeholder="nombre y apellido">
-        <input class="form" type="number" placeholder="telefono"><br>
-        <input class="form" type="text" placeholder="correo electronico">
-        <input class="form" type="text" placeholder="como nos conocistes"><br>
-        <textarea class="form 2" name="" id="" cols="60" rows="10" placeholder="contanos por que te contactas con nosotros"></textarea><br>
-        <input type="submit" class="boton-enviar">
-        </form>
-    </article>
-    <footer>
-        <div class="redes">
-            <a href="https://www.instagram.com/crr.crew/"><i class="fa-brands fa-instagram"></i></a>
-            <i class="fa-brands fa-facebook"><!--falta crear el facebook--></i>
-            <a href="https://www.tiktok.com/@crr.crew"><i class="fa-brands fa-tiktok"></i></a>
+    <!--inicia header-->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../multimedia/imagenes/logo.jpg" alt="Logo"  class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="./Lavados.html">Lavados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Detail.html">Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Fotos.html"><i class="fa-solid fa-camera"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./Nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="btn-contacto"><a href="#">Contacto</a></div>
-        <p>todos los derechos reservados por copyright crr crew 2023</p>
+    </nav>
+    <!--finaliza header-->
+    <section class="container-fluid contacto">
+        <div class="row">
+            <div class="col-md-12"> 
+                <!--inicia texto-->
+                <h2 class="contacto-txt">Contacto</h2>
+                <p class="contacto-txt">"¡Contáctanos! Estamos aquí para responder tus preguntas y escuchar tus comentarios. En crr.crew, valoramos la conexión con nuestra comunidad de entusiastas automovilísticos. ¡Esperamos saber de ti pronto!"</p>
+                <!--finaliza texto-->
+            </div>
+        </div>
+            <div class="col-md-12">
+                <!--inicia formulario-->
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre y Apellido" name="name">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Telefono" name="tel">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Correo Electronico" name="mail">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="¿Como nos conociste?" name="engagement">
+                        </div>
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Contanos por que te contactas con nosotros"></textarea>
+                        <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+                    </div>
+                  </form>
+                <!--finaliza formulario-->
+            </div>
+        </div>
+    </section>
+    
+    <!--inicia footer-->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="redes">
+                    <a href="https://www.instagram.com/crr.crew/"><i class="fa-brands fa-instagram"></i></a>
+                    <i class="fa-brands fa-facebook"><!--falta crear el facebook--></i>
+                    <a href="https://www.tiktok.com/@crr.crew"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="btn-contacto"><a href="#">Contacto</a></div>
+                <p>todos los derechos reservados por copyright crr crew 2023</p>
+            </div>
+        </div>
     </footer>
+    <!--finaliza footer-->
+    <!--inicia btn whats-->
     <a href="https://api.whatsapp.com/send/?phone=5491122358364" class="whats" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-    <!--<a href="#" class="subir">
-        <i class="fa-solid fa-chevron-up"></i>
-    </a>-->
+    <!--finaliza btn whats-->
+    <!--inicia scripts--> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>  
