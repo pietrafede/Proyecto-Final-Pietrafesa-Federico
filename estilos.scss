@@ -1,0 +1,342 @@
+$color1: yellow;
+$color2: #000;
+$color3: #fff;
+$color4: #111;
+$color5: blueviolet;
+$size1: 200px;
+$size2: 25px;
+$size3: 22px;
+$size4: 20px;
+$size5: 5px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar{
+    background-color: $color2;
+    height: $size1;
+    font-size: $size3;
+    border: $size5 solid $color1;
+    text-transform: capitalize;
+    .navbar-brand{
+        width: 35%;
+    }
+    .nav-item{
+        display: inline-block;
+        padding-top: 50px;
+    }
+    a{
+        text-decoration: none;
+        color: $color3;
+        padding: $size4;
+        &:hover{
+            color: $color1;
+            background-color: rgba(98, 0, 255, 0.363);
+            border: 1px solid $color1;
+            box-shadow: 2px 2px 10px rgba(255, 255, 0, 0.863);
+            }
+    }
+}
+
+main{
+    height: 120vh;
+    background-color: $color4;
+    background-size: cover;
+    color: $color2;
+}
+
+article{
+    background-color: $color4;
+    background-size: cover;
+    color: $color3;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+}
+
+section{
+    background-color: $color4;
+    section img{
+        justify-content: flex-end;
+        height: 600px;
+        margin-top: $size4;
+    }
+}
+
+footer{
+    background-color: $color2;
+    height: 100px;
+    font-size: 10px;
+    border: $size5 solid $color1;
+    text-transform: uppercase;
+    a{
+        text-decoration: none;
+        color: $color3;
+        &:hover{
+            color: $color5;
+            background-color: $color1;
+            border: 1px solid $color1;
+        }
+        i{
+            color: $color1;
+            font-size: $size2;
+            float: right;
+            margin-top: $size2;
+            padding: 10px;
+            &:hover{
+                color: $color5;
+                background-color: $color1;
+                border: 1px solid $color1;
+            }
+        }
+    }
+    .btn-contacto{
+        padding: $size4;
+    }
+    p{
+        color: $color3;
+        margin-left: $size4;
+    }
+}
+
+.whats{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 105px;
+    right: 30px;
+    background-color: #0df053;
+    color: $color3;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1 10px rgba(0,0,0,0.3);
+    z-index: 100;
+    &:hover{
+        text-decoration: none;
+        color: #0df053;
+        background-color: $color3;
+    }
+}
+
+.lavados{
+    margin-top: $size1;
+    color: $color3;
+    display: flex;
+    justify-content: space-between;
+}
+.lavados-txt{
+    width: 100%;
+    text-align: end;
+}
+
+.detail{
+    @extend .lavados;
+}
+
+.fotos{
+    padding: 40px;
+}
+
+.nosotros{
+    @extend .lavados;
+}
+
+.nosotros-txt{
+    @extend .lavados-txt;
+}
+
+.galeria{
+    margin-top: $size1;
+    height: 100%;
+    background-color: $color2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 180px);
+    grid-template-areas: "img1 img2 img3 img4"
+                        "img5 img5 img6 img4"
+                        "img5 img5 img7 img9"
+                        "img8 img8 img10 img9"
+                        "img11 img12 img12 img9";
+    grid-gap: $size4;
+    padding: $size4;
+    .item{
+        border: 2px solid $color1;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        filter: grayscale(100%);
+        transform: scale(1.04);
+        &:hover{
+            filter: grayscale(0%);
+            transition: all 0.9s;
+            transform: scale(1.10);
+            z-index: 1;
+        }
+    }
+    .item1{
+        grid-area: img1;
+        background-image: url(./multimedia/imagenes/Encuentros\ 1.jpg);
+    }
+    .item2{
+        grid-area: img2;
+        background-image: url(./multimedia/imagenes/Encuentros\ 3.jpg);
+    }
+    .item3{
+        grid-area: img3;
+        background-image: url(./multimedia/imagenes/Encuentros\ 2.jpg);
+    }
+    .item4{
+        grid-area: img4;
+        background-image: url(./multimedia/imagenes/Rolling\ 1.jpg);
+    }
+    .item5{
+        grid-area: img5;
+        background-image: url(./multimedia/imagenes/Rolling\ 2.jpg);
+    }
+    .item6{
+        grid-area: img6;
+        background-image: url(./multimedia/imagenes/Rolling\ 3.jpg);
+    }
+    .item7{
+        grid-area: img7;
+        background-image: url(./multimedia/imagenes/autodromo\ 3.jpg);
+    }
+    .item8{
+        grid-area: img8;
+        background-image: url(./multimedia/imagenes/autodromo\ 2.jpg);
+    }
+    .item9{
+        grid-area: img9;
+        background-image: url(./multimedia/imagenes/autodromo\ 1.jpg);
+    }
+    .item10{
+        grid-area: img10;
+        background-image: url(./multimedia/imagenes/off\ road\ 1.jpg);
+    }
+    .item11{
+        grid-area: img11;
+        background-image: url(./multimedia/imagenes/off\ road\ 2.jpg);
+    }
+    .item12{
+        grid-area: img12;
+        background-image: url(./multimedia/imagenes/off\ road\ 3.jpg);
+    }
+}
+
+.contacto{
+    margin-top: $size1;
+    height: auto;
+    color: $color3;
+}
+
+form{
+    height: 57vh;
+    .form-control{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: $color2;
+        border: 2px solid $color1;
+        box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+        &:hover{
+            background-color: $color3;
+            border: 2px solid $color1;
+            box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+        }
+    }
+    .btn-enviar{
+        background-color: $color5;
+        border: none;
+        width: 100px;
+        margin-left: 45%;
+        &:hover{
+            background-image: radial-gradient( $color5 10%, $color2);
+            border: 2px solid $color1;
+            transition: 0.9s;
+            scale: 1.10;
+            color: $color1;
+        }
+        &:active{
+            transform: rotatex(360deg);
+            transition: 1s;
+            box-shadow: 10px 10px 30px rgba(93, 1, 239, 0.488) !important;
+        }
+    }
+}
+
+.resp{
+    background-color: $color4;
+    background-size: cover;
+    min-height: calc(100vh - 300px);
+    width: 100%;
+}
+
+
+/*inicia media queries*/
+@media only screen and (min-width:0) and (max-width:576px){
+    .navbar{
+        .navbar-collapse{
+            background-color: $color2;
+            border: 2px solid $color1;
+        }
+    }
+}
+
+@media (min-width: 2000px){
+    .navbar{
+        .navbar-brand{
+            width: 25%;
+        }
+    }
+    form{
+        .btn-enviar{
+            margin-left: 48%;
+        }
+    }
+}
+
+@media (min-width: 3000px){
+    .navbar{
+        .navbar-brand{
+            width: 10%;
+        }
+    }
+    form{
+        .btn-enviar{
+            margin-left: 49%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .lavados{
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: center;
+    }
+    form{
+        .btn-enviar{
+            margin-left: 40%;
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .lavados-txt{
+            width: 180%;
+        }
+}
+
+@media (max-width: 1150px){
+    .nosotros-img{
+        margin-left: 0%;
+        max-width: 60vh;
+    }
+}

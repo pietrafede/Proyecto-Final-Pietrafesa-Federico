@@ -1,10 +1,18 @@
-commit bda572d6591b91bf2e5d292f4dbe78d4c25e036b (HEAD -> master)
+Pietra@DESKTOP-S4DCFQI MINGW64 ~/Documents/Coderhouse/Diseño web/Proyecto final (master)
+$ git log
+commit b0cfc2e712b93323b3e56d2c222a054b83ee3b0a (HEAD -> master, origin/master)
+Author: Pietrafesa Federico <fede.pietra@hotmail.com>
+Date:   Wed Aug 23 18:07:58 2023 -0300
+
+    mejoras responsive
+
+commit bda572d6591b91bf2e5d292f4dbe78d4c25e036b
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Tue Aug 22 22:10:58 2023 -0300
 
     agrego carousel formulario video index y responsive con bootstrap y media queries
 
-commit 373d54f129151102a464b6cddc67c35dc51ee731 (origin/master)
+commit 373d54f129151102a464b6cddc67c35dc51ee731
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Tue Aug 22 19:58:08 2023 -0300
 

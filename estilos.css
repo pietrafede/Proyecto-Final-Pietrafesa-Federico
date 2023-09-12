@@ -1,208 +1,299 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+.navbar {
+  background-color: #000;
+  height: 200px;
+  font-size: 22px;
+  border: 5px solid yellow;
+  text-transform: capitalize;
+}
+.navbar .navbar-brand {
+  width: 35%;
+}
+.navbar .nav-item {
+  display: inline-block;
+  padding-top: 50px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 20px;
+}
+.navbar a:hover {
+  color: yellow;
+  background-color: rgba(98, 0, 255, 0.363);
+  border: 1px solid yellow;
+  box-shadow: 2px 2px 10px rgba(255, 255, 0, 0.863);
 }
 
-.navbar{
-    background-color: #000;
-    height: 200px;
-    font-size: 22px;
-    border: 5px solid yellow;
-    text-transform: capitalize;
+main {
+  height: 120vh;
+  background-color: #111;
+  background-size: cover;
+  color: #000;
 }
 
-.navbar-brand{
-    width: 35%;
+article {
+  background-color: #111;
+  background-size: cover;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
 
-.nav-item{
-    display: inline-block;
-    padding-top: 50px;
+section {
+  background-color: #111;
+}
+section section img {
+  justify-content: flex-end;
+  height: 600px;
+  margin-top: 20px;
 }
 
-.navbar a{
-    text-decoration: none;
-    color: #fff;
-    padding: 20px;
+footer {
+  background-color: #000;
+  height: 100px;
+  font-size: 10px;
+  border: 5px solid yellow;
+  text-transform: uppercase;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  color: blueviolet;
+  background-color: yellow;
+  border: 1px solid yellow;
+}
+footer a i {
+  color: yellow;
+  font-size: 25px;
+  float: right;
+  margin-top: 25px;
+  padding: 10px;
+}
+footer a i:hover {
+  color: blueviolet;
+  background-color: yellow;
+  border: 1px solid yellow;
+}
+footer .btn-contacto {
+  padding: 20px;
+}
+footer p {
+  color: #fff;
+  margin-left: 20px;
 }
 
-.navbar a:hover{
-    color: yellow;
-    background-color: rgba(98, 0, 255, 0.363);
-    border: 1px solid yellow;
-    box-shadow: 2px 2px 10px rgba(255, 255, 0, 0.863);
+.whats {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 105px;
+  right: 30px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.whats:hover {
+  text-decoration: none;
+  color: #0df053;
+  background-color: #fff;
 }
 
-main{
-    height: 120vh;
-    background-color: #111;
-    background-size: cover;
-    color: #fff;
+.lavados, .nosotros, .detail {
+  margin-top: 200px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
 }
 
-.resp{
-    background-color: #111;
-    background-size: cover;
-    min-height: calc(100vh - 300px);
+.lavados-txt, .nosotros-txt {
+  width: 100%;
+  text-align: end;
 }
 
-article{
-    background-color: #111;
-    background-size: cover;
-    color: #fff;
-    font-size: 24px;
-    text-align: center;
-    padding-left: 10% !important;
-    padding-right: 10% !important;
+.fotos {
+  padding: 40px;
 }
 
-section{
-    background-color: #111;
+.galeria {
+  margin-top: 200px;
+  height: 100%;
+  background-color: #000;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 180px);
+  grid-template-areas: "img1 img2 img3 img4" "img5 img5 img6 img4" "img5 img5 img7 img9" "img8 img8 img10 img9" "img11 img12 img12 img9";
+  grid-gap: 20px;
+  padding: 20px;
+}
+.galeria .item {
+  border: 2px solid yellow;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  filter: grayscale(100%);
+  transform: scale(1.04);
+}
+.galeria .item:hover {
+  filter: grayscale(0%);
+  transition: all 0.9s;
+  transform: scale(1.1);
+  z-index: 1;
+}
+.galeria .item1 {
+  grid-area: img1;
+  background-image: url(./multimedia/imagenes/Encuentros\ 1.jpg);
+}
+.galeria .item2 {
+  grid-area: img2;
+  background-image: url(./multimedia/imagenes/Encuentros\ 3.jpg);
+}
+.galeria .item3 {
+  grid-area: img3;
+  background-image: url(./multimedia/imagenes/Encuentros\ 2.jpg);
+}
+.galeria .item4 {
+  grid-area: img4;
+  background-image: url(./multimedia/imagenes/Rolling\ 1.jpg);
+}
+.galeria .item5 {
+  grid-area: img5;
+  background-image: url(./multimedia/imagenes/Rolling\ 2.jpg);
+}
+.galeria .item6 {
+  grid-area: img6;
+  background-image: url(./multimedia/imagenes/Rolling\ 3.jpg);
+}
+.galeria .item7 {
+  grid-area: img7;
+  background-image: url(./multimedia/imagenes/autodromo\ 3.jpg);
+}
+.galeria .item8 {
+  grid-area: img8;
+  background-image: url(./multimedia/imagenes/autodromo\ 2.jpg);
+}
+.galeria .item9 {
+  grid-area: img9;
+  background-image: url(./multimedia/imagenes/autodromo\ 1.jpg);
+}
+.galeria .item10 {
+  grid-area: img10;
+  background-image: url(./multimedia/imagenes/off\ road\ 1.jpg);
+}
+.galeria .item11 {
+  grid-area: img11;
+  background-image: url(./multimedia/imagenes/off\ road\ 2.jpg);
+}
+.galeria .item12 {
+  grid-area: img12;
+  background-image: url(./multimedia/imagenes/off\ road\ 3.jpg);
 }
 
-.lavados{
-    margin-top: 200px;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-}
-.lavados-txt{
-    width: 100%;
-    text-align: end;
+.contacto {
+  margin-top: 200px;
+  height: auto;
+  color: #fff;
 }
 
-.carousel-item{
-    justify-content: flex-end;
-    height:600px !important;
+form {
+  height: 57vh;
+}
+form .form-control {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #000;
+  border: 2px solid yellow;
+  box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+}
+form .form-control:hover {
+  background-color: #fff;
+  border: 2px solid yellow;
+  box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+}
+form .btn-enviar {
+  background-color: blueviolet;
+  border: none;
+  width: 100px;
+  margin-left: 45%;
+}
+form .btn-enviar:hover {
+  background-image: radial-gradient(blueviolet 10%, #000);
+  border: 2px solid yellow;
+  transition: 0.9s;
+  scale: 1.1;
+  color: yellow;
+}
+form .btn-enviar:active {
+  transform: rotatex(360deg);
+  transition: 1s;
+  box-shadow: 10px 10px 30px rgba(93, 1, 239, 0.488) !important;
 }
 
-section img{
-    justify-content: flex-end;
-    height: 600px;
-    margin-top: 20px;
-}
-
-.inicio{
-    margin-top: 200px;
-}
-
-.fotos{
-    padding: 40px;
-}
-
-.contacto{
-    margin-top: 200px;
-    height: auto;
-    color: #fff;
-}
-
-form{
-    height: 57vh;
-}
-
-.form-control{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: #000;
-    border: 2px solid yellow;
-    box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
-}
-
-.btn-enviar{
-    background-color: blueviolet;
-    border: none;
-}
-
-footer{
-    background-color: #000;
-    height: 100px;
-    font-size: 10px;
-    border: 5px solid yellow;
-    text-transform: uppercase;
-}
-
-footer a{
-    text-decoration: none;
-    color: #fff;
-}
-
-footer a:hover{
-    color: blueviolet;
-    background-color: yellow;
-    border: 1px solid yellow;
-}
-
-.btn-contacto{
-    padding: 20px;
-}
-
-footer p{
-    color: #fff;
-    margin-left: 20px;
-}
-
-footer i{
-    color: yellow;
-    font-size: 25px;
-    float: right;
-    margin-top: 25px;
-    padding: 10px;
-}
-
-footer i:hover{
-    color: blueviolet;
-    background-color: yellow;
-    border: 1px solid yellow;
-}
-
-.whats{
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 105px;
-    right: 30px;
-    background-color: #0df053;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1 10px rgba(0,0,0,0.3);
-    z-index: 100;
-}
-
-.whats:hover{
-    text-decoration: none;
-    color: #0df053;
-    background-color: #fff;
+.resp {
+  background-color: #111;
+  background-size: cover;
+  min-height: calc(100vh - 300px);
+  width: 100%;
 }
 
 /*inicia media queries*/
-@media (min-width: 2000px){
-    .navbar-brand{
-        width: 25%;
-    }
+@media only screen and (min-width: 0) and (max-width: 576px) {
+  .navbar .navbar-collapse {
+    background-color: #000;
+    border: 2px solid yellow;
+  }
 }
-@media (min-width: 3000px){
-    .navbar-brand{
-        width: 10%;
-    }
+@media (min-width: 2000px) {
+  .navbar .navbar-brand {
+    width: 25%;
+  }
+  form .btn-enviar {
+    margin-left: 48%;
+  }
 }
-@media (max-width: 768px){
-    .lavados{
-        flex-wrap: wrap;
-        width: auto;
-        justify-content: center;
-    }
+@media (min-width: 3000px) {
+  .navbar .navbar-brand {
+    width: 10%;
+  }
+  form .btn-enviar {
+    margin-left: 49%;
+  }
 }
-@media (min-width: 768px){
-    .lavados-txt{
-            width: 180%;
-        }
+@media (max-width: 768px) {
+  .lavados, .detail, .nosotros {
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: center;
+  }
+  form .btn-enviar {
+    margin-left: 40%;
+  }
 }
+@media (min-width: 768px) {
+  .lavados-txt, .nosotros-txt {
+    width: 180%;
+  }
+}
+@media (max-width: 1150px) {
+  .nosotros-img {
+    margin-left: 0%;
+    max-width: 60vh;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
