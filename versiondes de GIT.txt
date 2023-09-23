@@ -1,3 +1,9 @@
+commit 469b7c46f3d1d324f95451a0993ae0ae7619a90c (HEAD -> master, origin/master)
+Author: Pietrafesa Federico <fede.pietra@hotmail.com>
+Date:   Mon Sep 11 23:52:49 2023 -0300
+
+    agrego mejoras seo
+
 commit 956f8918be25a6e2abaeade753f73e9634babd0d (HEAD -> master, origin/master)
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Mon Sep 11 22:58:52 2023 -0300
