@@ -1,49 +1,47 @@
-ommit ea2c9be0d684b4bd4b7e9aec54bd8599aaa216c5 (HEAD -> master, origin/master)
+[33mcommit ea2c9be0d684b4bd4b7e9aec54bd8599aaa216c5[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
 Merge: 64ce97f 65d8431
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Fri Sep 22 21:42:36 2023 -0300
 
     Merge branch 'master' of https://github.com/pietrafede/ProyectoFinalDise-oWeb
 
-commit 64ce97f91d7ac4f18fdd941d811cf7322fdd0be7
+[33mcommit 64ce97f91d7ac4f18fdd941d811cf7322fdd0be7[m
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Fri Sep 22 21:42:08 2023 -0300
 
     agrego imagenes de mejor calidad y configuro boton de contacto
 
-commit 65d84312b908b92af331ba8c18a5ae3d60012289
+[33mcommit 65d84312b908b92af331ba8c18a5ae3d60012289[m
 Author: pietrafede <142949138+pietrafede@users.noreply.github.com>
 Date:   Fri Sep 22 21:10:01 2023 -0300
 
     Create README.md
 
-commit 469b7c46f3d1d324f95451a0993ae0ae7619a90c (HEAD -> master, origin/master)
+[33mcommit 469b7c46f3d1d324f95451a0993ae0ae7619a90c[m
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Mon Sep 11 23:52:49 2023 -0300
 
     agrego mejoras seo
 
-commit 956f8918be25a6e2abaeade753f73e9634babd0d (HEAD -> master, origin/master)
+[33mcommit 956f8918be25a6e2abaeade753f73e9634babd0d[m
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Mon Sep 11 22:58:52 2023 -0300
 
     modifico la seccion fotos y agrego sass
 
-Pietra@DESKTOP-S4DCFQI MINGW64 ~/Documents/Coderhouse/Diseño web/Proyecto final (master)
-$ git log
-commit b0cfc2e712b93323b3e56d2c222a054b83ee3b0a (HEAD -> master, origin/master)
+[33mcommit b0cfc2e712b93323b3e56d2c222a054b83ee3b0a[m
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Wed Aug 23 18:07:58 2023 -0300
 
     mejoras responsive
 
-commit bda572d6591b91bf2e5d292f4dbe78d4c25e036b
+[33mcommit bda572d6591b91bf2e5d292f4dbe78d4c25e036b[m
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Tue Aug 22 22:10:58 2023 -0300
 
     agrego carousel formulario video index y responsive con bootstrap y media queries
 
-commit 373d54f129151102a464b6cddc67c35dc51ee731
+[33mcommit 373d54f129151102a464b6cddc67c35dc51ee731[m
 Author: Pietrafesa Federico <fede.pietra@hotmail.com>
 Date:   Tue Aug 22 19:58:08 2023 -0300
 

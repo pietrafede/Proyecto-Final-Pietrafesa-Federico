@@ -219,9 +219,18 @@ form .form-control {
   background-color: #000;
   border: 2px solid yellow;
   box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+  color: #fff;
 }
 form .form-control:hover {
   background-color: #fff;
+  border: 2px solid yellow;
+  box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+}
+form .form-control:active {
+  border: 2px solid yellow;
+  box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+}
+form .form-control:focus {
   border: 2px solid yellow;
   box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
 }
@@ -242,6 +251,13 @@ form .btn-enviar:active {
   transform: rotatex(360deg);
   transition: 1s;
   box-shadow: 10px 10px 30px rgba(93, 1, 239, 0.488) !important;
+}
+form .btn-enviar:focus {
+  background-image: radial-gradient(blueviolet 10%, #000);
+  border: 2px solid yellow;
+  transition: 0.9s;
+  scale: 1.1;
+  color: yellow;
 }
 
 .resp {
@@ -294,4 +310,6 @@ form .btn-enviar:active {
     margin-left: 0%;
     max-width: 60vh;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */

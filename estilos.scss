@@ -245,8 +245,17 @@ form{
         background-color: $color2;
         border: 2px solid $color1;
         box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+        color: $color3;
         &:hover{
             background-color: $color3;
+            border: 2px solid $color1;
+            box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+        }
+        &:active{
+            border: 2px solid $color1;
+            box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
+        }
+        &:focus{
             border: 2px solid $color1;
             box-shadow: 5px 5px 20px rgba(93, 1, 239, 0.488);
         }
@@ -267,6 +276,13 @@ form{
             transform: rotatex(360deg);
             transition: 1s;
             box-shadow: 10px 10px 30px rgba(93, 1, 239, 0.488) !important;
+        }
+        &:focus{
+            background-image: radial-gradient( $color5 10%, $color2);
+            border: 2px solid $color1;
+            transition: 0.9s;
+            scale: 1.10;
+            color: $color1;
         }
     }
 }
